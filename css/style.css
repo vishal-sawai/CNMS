@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    background: url("../img/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 91vh;
+}
