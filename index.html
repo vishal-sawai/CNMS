@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -82,7 +87,7 @@
 
 
     <!-- Home Start -->
-    <div id="home">
+    <div id="home" class="mb-4">
 
 
 
@@ -90,20 +95,84 @@
     <!-- Home End -->
 
     <!-- Course Start-->
-    <div class="container mx-auto" flex flex-wrap" id="course">
-        <div class="dpt">
-
+    <div id="course" class="mb-4">
+        <div class="heading text-center pt-7 px-8">
+            <h2 class="text-3xl uppercase pb-1 font-bold text-lime-800">Courses</h2>
+            <hr class="sm:w-60 mx-auto bg-lime-600 h-1 rounded-md">
         </div>
-        <div class="dpt">
-
-        </div>
-        <div class="dpt">
+        <div class="container mx-auto flex flex-wrap px-8">
+            <div class="dpt w-full text-center mx-auto py-10 sm:px-20 sm:w-96 rounded-md bg-sky-600 text-white my-5">
+                <h1 class="text-4xl uppercase font-bold">CSE</h1><br>
+                <a class="py-3 px-10 bg-rose-900 rounded-full hover:bg-rose-700" href="">View Notes</a>
+            </div>
+            <div class="dpt w-full text-center mx-auto py-10 sm:px-20 sm:w-96 rounded-md bg-sky-600 text-white my-5">
+                <h1 class="text-4xl uppercase font-bold">MCA</h1><br>
+                <a class="py-3 px-10 bg-rose-900 rounded-full hover:bg-rose-700" href="">View Notes</a>
+            </div>
+            <div class="dpt w-full text-center mx-auto py-10 sm:px-20 sm:w-96 rounded-md bg-sky-600 text-white my-5">
+                <h1 class="text-4xl uppercase font-bold">MBA</h1><br>
+                <a class="py-3 px-10 bg-rose-900 rounded-full hover:bg-rose-700" href="">View Notes</a>
+            </div>
 
         </div>
     </div>
     <!-- Couser End -->
 
+    <!-- About Us Start -->
+    <div id="about" class="mb-4">
+        <div class="heading text-center pt-7 pb-5 px-8">
+            <h2 class="text-3xl uppercase pb-1 font-bold text-lime-800">About Us</h2>
+            <hr class="sm:w-60 mx-auto bg-lime-600 h-1 rounded-md">
+        </div>
+        <div class="container mx-auto px-5 text-lg font-serif" style="font-family:'Josefin Sans', sans-serif;">
+            <p class="sm:px-10">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CNMS is College Notes Management System it
+                is an online platform
+                designed for college students and
+                teachers to share and manage notes. The website allows teachers to upload and share their notes with
+                their students, making it easier for them to access and study the material.
+                This website is only accessible those teachers and students, who are registered in the system.
+                Students can then log into the website and access the notes for their specific classes. They can
+                download the notes, print them, or even annotate them directly on the website. The notes are organized
+                by class, making it easy for students to find the material they need.
+            </p>
+        </div>
+    </div>
+    <!-- About us End -->
 
+    <!-- Contact us start -->
+    <div id="Contact" class="mb-4 contact">
+        <div class="heading text-center pt-7 pb-5 px-8">
+            <h2 class="text-3xl uppercase pb-1 font-bold text-lime-800">Contact Us</h2>
+            <hr class="sm:w-60 mx-auto bg-lime-600 h-1 rounded-md">
+        </div>
+        <form class="text-white sm:p-6 sm:w-4/5 mx-auto rounded-md px-20 py-10 shadow-lg shadow-indigo-500/40">
+            <div class="mb-4">
+                <label class="block text-gray-700 font-medium mb-2">Name</label>
+                <input class="border border-gray-400 p-2 rounded-md bg-rose-700 w-full" type="text"
+                    placeholder="Enter your name">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-medium mb-2">Email</label>
+                <input class="border border-gray-400 p-2 rounded-md bg-rose-700 w-full" type="email"
+                    placeholder="Enter your email">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-medium mb-2">Phone</label>
+                <input class="border border-gray-400 p-2 rounded-md bg-rose-700 w-full" type="tel"
+                    placeholder="Enter your phone number">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-medium mb-2">Message</label>
+                <textarea class="border border-gray-400 p-2 rounded-md bg-rose-700 w-full h-32"
+                    placeholder="Enter your message"></textarea>
+            </div>
+            <div class="text-center">
+                <button class="bg-indigo-500 text-white w-full py-2 px-4 rounded-lg hover:bg-indigo-600">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- Contact us end -->
 
     <script src="js/script.js"></script>
 </body>

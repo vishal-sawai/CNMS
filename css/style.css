@@ -8,3 +8,7 @@
     background-size: cover;
     height: 92vh;
 }
+
+.contact input, textarea {
+    outline: none;
+}
