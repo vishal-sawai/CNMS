@@ -18,7 +18,7 @@
     <!-- Navbar -->
     <nav class="bg-gray-800">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div class="relative flex h-16 items-center justify-between">
+            <div class="relative flex h-20 items-center justify-between">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                     <!-- Mobile menu button-->
                     <button type="button" onclick="toggle()"
@@ -39,25 +39,23 @@
                 </div>
                 <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div class="flex flex-shrink-0 items-center">
-                        <img class="block h-8 w-auto lg:hidden"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
-                        <img class="hidden h-8 w-auto lg:block"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+                        <img class="block h-16 w-auto lg:hidden rounded-full" src="img/cnms-logo.png" alt="CNMS">
+                        <img class="hidden h-16 w-auto lg:block rounded-full" src="img/cnms-logo.png" alt="CNMS">
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
-                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                            <a href="#home"
+                                class="bg-gray-900 text-white px-5 py-6 rounded-md text-sm font-medium">Home</a>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Course</a>
+                            <a href="#course"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Course</a>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About
+                            <a href="#about"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">About
                                 Us</a>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                            <a href="#Contact"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -66,19 +64,19 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
+        <div class="hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pt-2 pb-3">
-                <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                <a href="#home" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
                     aria-current="page">Home</a>
 
-                <a href="#"
+                <a href="#course"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Course</a>
 
-                <a href="#"
+                <a href="#about"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About
                     Us</a>
 
-                <a href="#"
+                <a href="#Contact"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
         </div>
@@ -101,15 +99,15 @@
             <hr class="sm:w-60 mx-auto bg-lime-600 h-1 rounded-md">
         </div>
         <div class="container mx-auto flex flex-wrap px-8">
-            <div class="dpt w-full text-center mx-auto py-10 sm:px-20 sm:w-96 rounded-md bg-sky-600 text-white my-5">
+            <div class="dpt w-full text-center mx-auto py-10 sm:w-96 rounded-md bg-sky-600 text-white my-5 mx-2 grow">
                 <h1 class="text-4xl uppercase font-bold">CSE</h1><br>
                 <a class="py-3 px-10 bg-rose-900 rounded-full hover:bg-rose-700" href="">View Notes</a>
             </div>
-            <div class="dpt w-full text-center mx-auto py-10 sm:px-20 sm:w-96 rounded-md bg-sky-600 text-white my-5">
+            <div class="dpt w-full text-center mx-auto py-10 sm:w-96 rounded-md bg-sky-600 text-white my-5 mx-2 grow">
                 <h1 class="text-4xl uppercase font-bold">MCA</h1><br>
                 <a class="py-3 px-10 bg-rose-900 rounded-full hover:bg-rose-700" href="">View Notes</a>
             </div>
-            <div class="dpt w-full text-center mx-auto py-10 sm:px-20 sm:w-96 rounded-md bg-sky-600 text-white my-5">
+            <div class="dpt w-full text-center mx-auto py-10 sm:w-96 rounded-md bg-sky-600 text-white my-5 mx-2 grow">
                 <h1 class="text-4xl uppercase font-bold">MBA</h1><br>
                 <a class="py-3 px-10 bg-rose-900 rounded-full hover:bg-rose-700" href="">View Notes</a>
             </div>
@@ -119,62 +117,86 @@
     <!-- Couser End -->
 
     <!-- About Us Start -->
-    <div id="about" class="mb-4">
-        <div class="heading text-center pt-7 pb-5 px-8">
-            <h2 class="text-3xl uppercase pb-1 font-bold text-lime-800">About Us</h2>
-            <hr class="sm:w-60 mx-auto bg-lime-600 h-1 rounded-md">
-        </div>
-        <div class="container mx-auto px-5 text-lg font-serif" style="font-family:'Josefin Sans', sans-serif;">
-            <p class="sm:px-10">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CNMS is College Notes Management System it
-                is an online platform
-                designed for college students and
-                teachers to share and manage notes. The website allows teachers to upload and share their notes with
-                their students, making it easier for them to access and study the material.
-                This website is only accessible those teachers and students, who are registered in the system.
-                Students can then log into the website and access the notes for their specific classes. They can
-                download the notes, print them, or even annotate them directly on the website. The notes are organized
-                by class, making it easy for students to find the material they need.
-            </p>
+    <div id="about" class="mb-4 mt-4">
+        <div class="container mx-auto text-lg font-serif" style="font-family:'Josefin Sans', sans-serif;">
+            <div class="mx-auto px-10 sm:px-20 flex flex-wrap place-content-center">
+                <div class="abimg sm:w-96 mx-4 grow">
+                    <img src="img/bg3.jpg" class="rounded-lg" alt="" srcset="">
+                </div>
+                <div class="abinfo sm:w-1/2 mx-4 grow">
+                    <div class="heading text-center pt-7 pb-5 px-8">
+                        <h2 class="text-3xl uppercase pb-1 font-bold text-lime-800">About Us</h2>
+                        <hr class="sm:w-60 mx-auto bg-lime-600 h-1 rounded-md">
+                    </div>
+                    <p class="">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CNMS is College Notes Management
+                        System
+                        it
+                        is an online platform
+                        designed for college students and
+                        teachers to share and manage notes. The website allows teachers to upload and share their notes
+                        with
+                        their students, making it easier for them to access and study the material.
+                        This website is only accessible those teachers and students, who are registered in the system.
+                        Students can then log into the website and access the notes for their specific classes. They can
+                        download the notes, print them, or even annotate them directly on the website. The notes are
+                        organized
+                        by class, making it easy for students to find the material they need.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- About us End -->
 
     <!-- Contact us start -->
-    <div id="Contact" class="mb-4 contact">
+    <div id="Contact" class="contact mt-4" style="background-color: #2E4053;">
         <div class="heading text-center pt-7 pb-5 px-8">
-            <h2 class="text-3xl uppercase pb-1 font-bold text-lime-800">Contact Us</h2>
-            <hr class="sm:w-60 mx-auto bg-lime-600 h-1 rounded-md">
+            <h2 class="text-3xl uppercase pb-1 font-bold text-white">Contact Us</h2>
+            <!-- <hr class="sm:w-60 mx-auto bg-white h-1 rounded-md"> -->
         </div>
-        <form class="text-white sm:p-6 sm:w-4/5 mx-auto rounded-md px-20 py-10 shadow-lg shadow-indigo-500/40">
-            <div class="mb-4">
-                <label class="block text-gray-700 font-medium mb-2">Name</label>
-                <input class="border border-gray-400 p-2 rounded-md bg-rose-700 w-full" type="text"
-                    placeholder="Enter your name">
+        <div>
+            <div class="px-5 pb-10">
+                <form
+                    class="bg-white sm:p-6 sm:w-4/5 mx-auto rounded-md sm:px-20 px-5 py-10 shadow-lg shadow-indigo-500/40">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-medium mb-2">Name</label>
+                        <input class="border border-gray-400 p-2 rounded-md w-full" type="text"
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input class="border border-gray-400 p-2 rounded-md w-full" type="email"
+                            placeholder="Enter your email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-medium mb-2">Phone</label>
+                        <input class="border border-gray-400 p-2 rounded-md w-full" type="tel"
+                            placeholder="Enter your phone number">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea class="border border-gray-400 p-2 rounded-md w-full h-32"
+                            placeholder="Enter your message"></textarea>
+                    </div>
+                    <div>
+                        <button
+                            class="bg-indigo-600 text-white w-full py-2 px-4 rounded-lg hover:bg-indigo-500 uppercase font-bold">Submit</button>
+                    </div>
+                </form>
             </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-medium mb-2">Email</label>
-                <input class="border border-gray-400 p-2 rounded-md bg-rose-700 w-full" type="email"
-                    placeholder="Enter your email">
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-medium mb-2">Phone</label>
-                <input class="border border-gray-400 p-2 rounded-md bg-rose-700 w-full" type="tel"
-                    placeholder="Enter your phone number">
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-medium mb-2">Message</label>
-                <textarea class="border border-gray-400 p-2 rounded-md bg-rose-700 w-full h-32"
-                    placeholder="Enter your message"></textarea>
-            </div>
-            <div class="text-center">
-                <button class="bg-indigo-500 text-white w-full py-2 px-4 rounded-lg hover:bg-indigo-600">Submit</button>
-            </div>
-        </form>
+        </div>
     </div>
     <!-- Contact us end -->
 
-    <script src="js/script.js"></script>
+    <!-- Footer start -->
+    <footer class="text-center py-3 text-white" style="background-color: #212F3D;">
+        Copyright - CNMS | All Right Reserved
+    </footer>
+    <!-- Footer End -->
+
+    <script src=" js/script.js">
+    </script>
 </body>
 
 </html>
