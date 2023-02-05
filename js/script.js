@@ -15,3 +15,13 @@ function TeacherLogin() {
     document.getElementById("TeacherBtn").style.backgroundColor = "darkred";
     document.getElementById("StudentBtn").style.backgroundColor = "#2C3E50";
 }
+
+// navbar profile
+const navprofilemenu = document.getElementById('navprofilemenu');
+const navprofile = () => navprofilemenu.classList.toggle("hidden");
+
+
+//  data send 
+function formdata(val1) {
+    document.getElementById("course").value = val1;
+}
