@@ -26,7 +26,7 @@
             <div class="relative flex h-20 items-center justify-between">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                     <!-- Mobile menu button-->
-                    <button type="button"
+                    <button type="button" onclick="toggle()"
                         class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                         aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -54,13 +54,14 @@
                                 aria-current="page">Dashboard</a>
 
                             <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Team</a>
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Students</a>
 
                             <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Projects</a>
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Teachers</a>
 
                             <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Calendar</a>
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Contact
+                                Us</a>
                         </div>
                     </div>
                 </div>
@@ -95,20 +96,21 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
+        <div class="hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pt-2 pb-3">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a href="dashboard.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
                     aria-current="page">Dashboard</a>
 
                 <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Students</a>
 
                 <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Teachers</a>
 
                 <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact
+                    Us</a>
             </div>
         </div>
     </nav>
@@ -116,6 +118,57 @@
     <!-- Navbar End -->
 
 
+
+
+
+    <!-- Student Section start -->
+
+    <div class="relative overflow-x-auto shadow-md">
+        <table class="w-full text-sm text-left text-blue-100 dark:text-blue-100">
+            <thead class="text-xs text-white uppercase bg-blue-600 border-b border-blue-400 dark:text-white">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        SR.NO
+                    </th>
+                    <th scope="col" class="px-6 py-3 bg-blue-500">
+                        Student Name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Department
+                    </th>
+                    <th scope="col" class="px-6 py-3 bg-blue-500">
+                        Email
+                    </th>
+                    <th scope="col" class="px-6 py-3 ">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-blue-600 border-b border-blue-400">
+                    <td class="px-6 py-4">
+                        1
+                    </td>
+                    <th scope="row"
+                        class="px-6 py-4 font-medium bg-blue-500 text-blue-50 whitespace-nowrap dark:text-blue-100">
+                        Vishal Sawai
+                    </th>
+                    <td class="px-6 py-4">
+                        MCA
+                    </td>
+                    <td class="px-6 py-4 bg-blue-500">
+                        vishalsawai17252@gmail.com
+                    </td>
+                    <td class="px-6 py-4">
+                        <a href="#" class="font-medium text-white hover:underline">Delete</a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Student Section end -->
 
     <!-- Javascript -->
     <script src="../js/script.js"></script>

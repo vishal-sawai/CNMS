@@ -23,5 +23,5 @@ const navprofile = () => navprofilemenu.classList.toggle("hidden");
 
 //  data send 
 function formdata(val1) {
-    document.getElementById("course").value = val1;
+    document.getElementById("coursevalue").value = val1;
 }
