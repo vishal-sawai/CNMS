@@ -53,14 +53,14 @@
                                 class="bg-gray-900 text-white px-5 py-6 rounded-md text-sm font-medium"
                                 aria-current="page">Dashboard</a>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Students</a>
+                            <a onclick="show('Section1');"
+                                class="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Students</a>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Teachers</a>
+                            <a onclick="show('Section2');"
+                                class="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Teachers</a>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Contact
+                            <a onclick="show('Section3');"
+                                class="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white px-5 py-6 rounded-md text-sm font-medium">Contact
                                 Us</a>
                         </div>
                     </div>
@@ -103,13 +103,13 @@
                     aria-current="page">Dashboard</a>
 
                 <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Students</a>
+                    class="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Students</a>
 
                 <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Teachers</a>
+                    class="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Teachers</a>
 
                 <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact
+                    class="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact
                     Us</a>
             </div>
         </div>
@@ -123,7 +123,12 @@
 
     <!-- Student Section start -->
 
-    <div class="relative overflow-x-auto shadow-md">
+    <div class="relative overflow-x-auto shadow-md hidden" id="Section1">
+        <div class="w-full flex px-3 py-2 bg-gray-900">
+            <span class="text-white p-2 ">Add Students</span>
+            <i class="fa-solid fa-plus bg-white p-3 rounded-md cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#addStudent"></i>
+        </div>
         <table class="w-full text-sm text-left text-blue-100 dark:text-blue-100">
             <thead class="text-xs text-white uppercase bg-blue-600 border-b border-blue-400 dark:text-white">
                 <tr>
@@ -169,6 +174,110 @@
     </div>
 
     <!-- Student Section end -->
+
+    <!-- Teachers Section start -->
+
+    <div class="relative overflow-x-auto shadow-md hidden" id="Section2">
+        <div class="w-full flex px-3 py-2 bg-gray-900">
+            <span class="text-white p-2 ">Add Teachers</span>
+            <i class="fa-solid fa-plus bg-white p-3 rounded-md cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#addteacher"></i>
+        </div>
+        <table class="w-full text-sm text-left text-blue-100 dark:text-blue-100">
+            <thead class="text-xs text-white uppercase bg-blue-600 border-b border-blue-400 dark:text-white">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        SR.NO
+                    </th>
+                    <th scope="col" class="px-6 py-3 bg-blue-500">
+                        Teacher Name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Department
+                    </th>
+                    <th scope="col" class="px-6 py-3 bg-blue-500">
+                        Email
+                    </th>
+                    <th scope="col" class="px-6 py-3 ">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-blue-600 border-b border-blue-400">
+                    <td class="px-6 py-4">
+                        1
+                    </td>
+                    <th scope="row"
+                        class="px-6 py-4 font-medium bg-blue-500 text-blue-50 whitespace-nowrap dark:text-blue-100">
+                        Vishal Sawai
+                    </th>
+                    <td class="px-6 py-4">
+                        MCA
+                    </td>
+                    <td class="px-6 py-4 bg-blue-500">
+                        vishalsawai17252@gmail.com
+                    </td>
+                    <td class="px-6 py-4">
+                        <a href="#" class="font-medium text-white hover:underline">Delete</a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Teachers Section end -->
+
+
+    <!-- Contact section start -->
+
+    <div class="relative overflow-x-auto shadow-md hidden" id="Section3">
+        <table class="w-full text-sm text-left text-blue-100 dark:text-blue-100">
+            <thead class="text-xs text-white uppercase bg-blue-600 border-b border-blue-400 dark:text-white">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        SR.NO
+                    </th>
+                    <th scope="col" class="px-6 py-3 bg-blue-500">
+                        Name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Email
+                    </th>
+                    <th scope="col" class="px-6 py-3 bg-blue-500">
+                        Message
+                    </th>
+                    <th scope="col" class="px-6 py-3 ">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-blue-600 border-b border-blue-400">
+                    <td class="px-6 py-4">
+                        1
+                    </td>
+                    <th scope="row"
+                        class="px-6 py-4 font-medium bg-blue-500 text-blue-50 whitespace-nowrap dark:text-blue-100">
+                        Vishal Sawai
+                    </th>
+                    <td class="px-6 py-4">
+                        9623639110
+                    </td>
+                    <td class="px-6 py-4 bg-blue-500">
+                        Hi vishal sawai
+                    </td>
+                    <td class="px-6 py-4">
+                        <a href="#" class="font-medium text-white hover:underline">Delete</a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Contact Section end -->
 
     <!-- Javascript -->
     <script src="../js/script.js"></script>
