@@ -29,7 +29,7 @@ function formdata(val1) {
 
 // Admin dashboard page
 // <!-- section hide and show code -->
-var divs = ["Section1", "Section2", "Section3"];
+var divs = ["Section1", "Section2", "Section3", "maindash"];
 var visibleId = null;
 
 function show(id) {

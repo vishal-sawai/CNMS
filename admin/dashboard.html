@@ -49,8 +49,8 @@
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
-                            <a href="dashboard.html"
-                                class="bg-gray-900 text-white px-5 py-6 rounded-md text-sm font-medium"
+                            <a onclick="show('maindash');"
+                                class="cursor-pointer bg-gray-900 text-white px-5 py-6 rounded-md text-sm font-medium"
                                 aria-current="page">Dashboard</a>
 
                             <a onclick="show('Section1');"
@@ -99,16 +99,17 @@
         <div class="hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pt-2 pb-3">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="dashboard.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                <a onclick="show('maindash');"
+                    class="cursor-pointer bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
                     aria-current="page">Dashboard</a>
 
-                <a href="#"
+                <a onclick="show('Section1');"
                     class="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Students</a>
 
-                <a href="#"
+                <a onclick="show('Section2');"
                     class="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Teachers</a>
 
-                <a href="#"
+                <a onclick="show('Section3');"
                     class="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact
                     Us</a>
             </div>
@@ -118,7 +119,32 @@
     <!-- Navbar End -->
 
 
+    <!-- Dashboard Start -->
 
+    <div>
+        <div id="maindash" class="">
+            <div class="container mx-auto flex flex-wrap px-8">
+                <div class="dpt w-full text-center mx-auto pt-6 pb-10 sm:w-96 rounded-md text-white my-5 mx-2 grow cursor-pointer"
+                    style="background-color: #34495E ;">
+                    <h1 class="text-xl font-bold mb-3">Students</h1>
+                    <h1 class="text-6xl font-bold">1</h1>
+                </div>
+                <div class="dpt w-full text-center mx-auto pt-6 pb-10 sm:w-96 rounded-md text-white my-5 mx-2 grow cursor-pointer"
+                    style="background-color: #8E44AD;">
+                    <h1 class="text-xl font-bold mb-3">Teachers</h1>
+                    <h1 class="text-6xl font-bold">4</h1>
+                </div>
+                <div class="dpt w-full text-center mx-auto pt-6 pb-10 sm:w-96 rounded-md text-white my-5 mx-2 grow cursor-pointer"
+                    style="background-color: #34495E ;">
+                    <h1 class="text-xl font-bold mb-3">Notes</h1>
+                    <h1 class="text-6xl font-bold">5</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard End -->
 
 
     <!-- Student Section start -->
